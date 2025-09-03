@@ -5,7 +5,7 @@ A Python library for constructing queries for Amazon Redshift using the builder 
 ## Installation
 
 ```bash
-pip install redshift-query-builder
+pip install https://github.com/wingkitlee0/redshift-query-builder.git
 ```
 
 ## Quick Start
@@ -138,7 +138,7 @@ pytest tests/
 
 ## License
 
-MIT License - see LICENSE file for details.
+Apache License 2.0 - see LICENSE file for details.
 
 ## References
 

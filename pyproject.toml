@@ -3,11 +3,14 @@ name = "redshift-query-builder"
 dynamic = ["version"]
 description = "A simple query builder for Redshift"
 readme = "README.md"
+license = { text = "Apache-2.0" }
 authors = [
     { name = "Kit Lee", email = "7000003+wingkitlee0@users.noreply.github.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pydantic"
+]
 
 [build-system]
 requires = ["hatchling"]
@@ -17,3 +20,8 @@ build-backend = "hatchling.build"
 source = "regex"
 path = "VERSION"
 pattern = "^(?P<version>.*)$"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+]
